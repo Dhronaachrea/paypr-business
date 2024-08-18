@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/view_date"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundGrey"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="13sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvBeneficiaryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="Vineet"
+                android:textColor="@color/colorDarkGrey"
+                android:layout_marginBottom="3dp"
+                android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tvAccountNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Vineet"
+                    android:textColor="@color/colorDarkGrey"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:text="Bank Name"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tvRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remark"
+                android:layout_marginBottom="5dp"
+                android:textColor="#808080"
+                android:textSize="13sp"
+                tools:ignore="SmallSp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginEnd="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="Amount"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:maxLength="22"
+                android:text="Satatus"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
